@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JTextField" name="jTextField1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jTextField1"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowClosing"/>
+    <EventHandler event="windowClosed" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowClosed"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel1" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="lbMarcacao" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="btAbrir" min="-2" pref="93" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jScrollPane2" min="-2" pref="721" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="btAbrir" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbMarcacao" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              <Component id="jScrollPane2" min="-2" pref="100" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jtbMusics">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="1" rowCount="4">
+                <Column editable="false" title="Musicas" type="java.lang.String"/>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jtbMusicsMouseClicked"/>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jtbMusicsKeyPressed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="java.awt.Button" name="btAbrir">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="Adicionar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAbrirActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Meta Dados"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="edTitulo" alignment="0" max="32767" attributes="0"/>
+                              <Component id="edArtista" alignment="0" max="32767" attributes="0"/>
+                              <Component id="edAlbum" alignment="0" max="32767" attributes="0"/>
+                              <Component id="edComentario" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cmbGenero" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="100" pref="100" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="edAno" min="-2" pref="74" max="-2" attributes="0"/>
+                              <Component id="edFlagTrilha" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="edNroFaixa" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                          <Component id="ckAlteracao" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="btRemoveMarcacoes" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="btGavar" min="-2" pref="87" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="lbAlteracao" min="-2" pref="113" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="294" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="lbAlteracao" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="jLabel1" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="edTitulo" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="edArtista" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel2" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="jLabel3" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="edAlbum" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="edAno" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="edComentario" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel5" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="edFlagTrilha" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel6" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="edNroFaixa" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="cmbGenero" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel8" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="btGavar" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="btRemoveMarcacoes" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="ckAlteracao" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Titulo : "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="edTitulo">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Artista :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="edArtista">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="edArtistaActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xc1;lbum :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="edAlbum">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="edAlbumActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ano : "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="edAno">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Comentario  : "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="edComentario">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Flag.Trilha :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="edFlagTrilha">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nro.Faixa :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="edNroFaixa">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Genero :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cmbGenero">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="81">
+                <StringItem index="0" value="0 - Blues"/>
+                <StringItem index="1" value="1 - Classic Rock"/>
+                <StringItem index="2" value="2 - Country"/>
+                <StringItem index="3" value="3 - Dance"/>
+                <StringItem index="4" value="4 - Disco"/>
+                <StringItem index="5" value="5 - Funk"/>
+                <StringItem index="6" value="6 - Grunge"/>
+                <StringItem index="7" value="7 - Hip-Hop"/>
+                <StringItem index="8" value="8 - Jazz"/>
+                <StringItem index="9" value="9 - Metal"/>
+                <StringItem index="10" value="10 - New Age"/>
+                <StringItem index="11" value="11 - Oldies"/>
+                <StringItem index="12" value="12 - Other"/>
+                <StringItem index="13" value="13 - Pop"/>
+                <StringItem index="14" value="14 - R&amp;B"/>
+                <StringItem index="15" value="15 - Rap"/>
+                <StringItem index="16" value="16 - Raggae"/>
+                <StringItem index="17" value="17 - Rock"/>
+                <StringItem index="18" value="18 - Techno"/>
+                <StringItem index="19" value="19 - Industrial"/>
+                <StringItem index="20" value="20 - Alternative"/>
+                <StringItem index="21" value="21 - Ska"/>
+                <StringItem index="22" value="22 - Death Metal"/>
+                <StringItem index="23" value="23 - Pranks"/>
+                <StringItem index="24" value="24 - Soundtrack"/>
+                <StringItem index="25" value="25 - Euro-Techno"/>
+                <StringItem index="26" value="26 - Ambient"/>
+                <StringItem index="27" value="27 - Trip-Hop"/>
+                <StringItem index="28" value="28 - Vocal"/>
+                <StringItem index="29" value="29 - Jazz + Funk"/>
+                <StringItem index="30" value="30  - Fusion"/>
+                <StringItem index="31" value="31 - Trance"/>
+                <StringItem index="32" value="32 - Classical"/>
+                <StringItem index="33" value="33 - Instrurmental"/>
+                <StringItem index="34" value="34 - Acid"/>
+                <StringItem index="35" value="35 - House"/>
+                <StringItem index="36" value="36 - Game"/>
+                <StringItem index="37" value="37 - Sound-Clip"/>
+                <StringItem index="38" value="38 - Gospel"/>
+                <StringItem index="39" value="39 - Noise"/>
+                <StringItem index="40" value="40 - Altern Rock"/>
+                <StringItem index="41" value="41 - Bass"/>
+                <StringItem index="42" value="42 - Soul"/>
+                <StringItem index="43" value="43 - Punk"/>
+                <StringItem index="44" value="44 - Space"/>
+                <StringItem index="45" value="45 - Meditative"/>
+                <StringItem index="46" value="46 - Instrumental Pop"/>
+                <StringItem index="47" value="47 - Instrumental Rock"/>
+                <StringItem index="48" value="48 - Ethnic"/>
+                <StringItem index="49" value="49 - Gothic"/>
+                <StringItem index="50" value="50 - Darkwave"/>
+                <StringItem index="51" value="51 - Techno - Industrial"/>
+                <StringItem index="52" value="52 - Electronic"/>
+                <StringItem index="53" value="53 - Pop - Folk"/>
+                <StringItem index="54" value="54 - Eurodance"/>
+                <StringItem index="55" value="55 - Dream"/>
+                <StringItem index="56" value="56 - Southern Rock"/>
+                <StringItem index="57" value="57 - Comedy"/>
+                <StringItem index="58" value="58 - Cult"/>
+                <StringItem index="59" value="59 - Gangsta"/>
+                <StringItem index="60" value="60 - Top 40"/>
+                <StringItem index="61" value="61 - Christian Rap"/>
+                <StringItem index="62" value="62 - Pop/Funk"/>
+                <StringItem index="63" value="63 - Jungle"/>
+                <StringItem index="64" value="64 - Native American"/>
+                <StringItem index="65" value="65 - Cabaret"/>
+                <StringItem index="66" value="66 - New Wave"/>
+                <StringItem index="67" value="67 - Psychadelic"/>
+                <StringItem index="68" value="68 - Rave"/>
+                <StringItem index="69" value="69 - Showtunes"/>
+                <StringItem index="70" value="70 - Trailer"/>
+                <StringItem index="71" value="71 - Lo-Fi"/>
+                <StringItem index="72" value="72 - Tribal"/>
+                <StringItem index="73" value="73 - Acid Punk"/>
+                <StringItem index="74" value="74 - Acid Jazz"/>
+                <StringItem index="75" value="75 - Polka"/>
+                <StringItem index="76" value="76 - Retro"/>
+                <StringItem index="77" value="77 - Musical "/>
+                <StringItem index="78" value="78 - Rock &amp; Roll"/>
+                <StringItem index="79" value="79 - Hard Rock"/>
+                <StringItem index="80" value=" "/>
+              </StringArray>
+            </Property>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbAlteracao">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=" "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btGavar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Gravar"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btGavarActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="ckAlteracao">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Habilitar Edi&#xe7;&#xe3;o"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ckAlteracaoMouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ckAlteracaoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btRemoveMarcacoes">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Remover Marca&#xe7;&#xf5;es"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btRemoveMarcacoesActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="lbMarcacao">
+    </Component>
+  </SubComponents>
+</Form>
